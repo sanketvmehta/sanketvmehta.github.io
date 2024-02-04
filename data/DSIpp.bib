@@ -1,6 +1,24 @@
-@article{mehta2022dsipp,
-  title={DSI++: Updating Transformer Memory with New Documents},
-  author={Mehta, Sanket Vaibhav and Gupta, Jai and Tay, Yi and Dehghani, Mostafa and Tran, Vinh Q. and Rao, Jinfeng and Najork, Marc and Strubell, Emma and Metzler, Donald},
-  journal={arXiv preprint arXiv:2212.09744},
-  year={2022}
+@inproceedings{mehta-etal-2023-dsi,
+    title = "{DSI}++: Updating Transformer Memory with New Documents",
+    author = "Mehta, Sanket Vaibhav and
+      Gupta, Jai  and
+      Tay, Yi  and
+      Dehghani, Mostafa  and
+      Tran, Vinh Q. and
+      Rao, Jinfeng  and
+      Najork, Marc  and
+      Strubell, Emma  and
+      Metzler, Donald",
+    editor = "Bouamor, Houda  and
+      Pino, Juan  and
+      Bali, Kalika",
+    booktitle = "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.emnlp-main.510",
+    doi = "10.18653/v1/2023.emnlp-main.510",
+    pages = "8198--8213",
+    abstract = "Differentiable Search Indices (DSIs) encode a corpus of documents in the parameters of a model and use the same model to map queries directly to relevant document identifiers. Despite the solid performance of DSI models, successfully deploying them in scenarios where document corpora change with time is an open problem. In this work, we introduce DSI++, a continual learning challenge for DSI with the goal of continuously indexing new documents while being able to answer queries related to both previously and newly indexed documents. Across different model scales and document identifier representations, we show that continual indexing of new documents leads to considerable forgetting of previously indexed documents. We also hypothesize and verify that the model experiences forgetting events during training, leading to unstable learning. To mitigate these issues, we investigate two approaches. The first focuses on modifying the training dynamics. Flatter minima implicitly alleviates forgetting, so we explicitly optimize for flatter loss basins and show that the model stably memorizes more documents (+12{\%}). Next, we introduce a parametric memory to generate pseudo-queries for documents and supplement them during incremental indexing to prevent forgetting for the retrieval task. Extensive experiments on a novel continual indexing benchmark based on Natural Questions demonstrate that our proposed solution mitigates the forgetting in DSI++ by a significant margin and improves the average Hits@10 by +21.1{\%} over competitive baselines.",
 }

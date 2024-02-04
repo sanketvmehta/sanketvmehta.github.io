@@ -1,7 +1,19 @@
-@inproceedings{mehta2018towards,
- title={Towards Semi-Supervised Learning for Deep Semantic Role Labeling},
- author={Mehta, Sanket Vaibhav and Lee, Jay Yoon and Carbonell, Jaime},
- booktitle={Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing},
- pages={4958--4963},
- year={2018}
+@inproceedings{mehta-etal-2018-towards,
+    title = "Towards Semi-Supervised Learning for Deep Semantic Role Labeling",
+    author = "Mehta, Sanket Vaibhav  and
+      Lee, Jay Yoon  and
+      Carbonell, Jaime",
+    editor = "Riloff, Ellen  and
+      Chiang, David  and
+      Hockenmaier, Julia  and
+      Tsujii, Jun{'}ichi",
+    booktitle = "Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing",
+    month = oct # "-" # nov,
+    year = "2018",
+    address = "Brussels, Belgium",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/D18-1538",
+    doi = "10.18653/v1/D18-1538",
+    pages = "4958--4963",
+    abstract = "Neural models have shown several state-of-the-art performances on Semantic Role Labeling (SRL). However, the neural models require an immense amount of semantic-role corpora and are thus not well suited for low-resource languages or domains. The paper proposes a semi-supervised semantic role labeling method that outperforms the state-of-the-art in limited SRL training corpora. The method is based on explicitly enforcing syntactic constraints by augmenting the training objective with a syntactic-inconsistency loss component and uses SRL-unlabeled instances to train a joint-objective LSTM. On CoNLL-2012 English section, the proposed semi-supervised training with 1{\%}, 10{\%} SRL-labeled data and varying amounts of SRL-unlabeled data achieves +1.58, +0.78 F1, respectively, over the pre-trained models that were trained on SOTA architecture with ELMo on the same SRL-labeled data. Additionally, by using the syntactic-inconsistency loss on inference time, the proposed model achieves +3.67, +2.1 F1 over pre-trained model on 1{\%}, 10{\%} SRL-labeled data, respectively.",
 }

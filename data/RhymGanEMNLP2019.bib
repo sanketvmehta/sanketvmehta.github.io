@@ -1,7 +1,20 @@
-@article{jhamtani2019rhymgan,
-  title={Learning Rhyming Constraints using Structured Adversaries},
-  author={Harsh Jhamtani and Sanket Vaibhav Mehta and Jaime Carbonell and Taylor Berg-Kirkpatrick},
-  booktitle = {Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing (EMNLP)},
-  month = {November},
-  year = {2019}
+@inproceedings{jhamtani-etal-2019-learning,
+    title = "Learning Rhyming Constraints using Structured Adversaries",
+    author = "Jhamtani, Harsh  and
+      Mehta, Sanket Vaibhav  and
+      Carbonell, Jaime  and
+      Berg-Kirkpatrick, Taylor",
+    editor = "Inui, Kentaro  and
+      Jiang, Jing  and
+      Ng, Vincent  and
+      Wan, Xiaojun",
+    booktitle = "Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)",
+    month = nov,
+    year = "2019",
+    address = "Hong Kong, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/D19-1621",
+    doi = "10.18653/v1/D19-1621",
+    pages = "6025--6031",
+    abstract = "Existing recurrent neural language models often fail to capture higher-level structure present in text: for example, rhyming patterns present in poetry. Much prior work on poetry generation uses manually defined constraints which are satisfied during decoding using either specialized decoding procedures or rejection sampling. The rhyming constraints themselves are typically not learned by the generator. We propose an alternate approach that uses a structured discriminator to learn a poetry generator that directly captures rhyming constraints in a generative adversarial setup. By causing the discriminator to compare poems based only on a learned similarity matrix of pairs of line ending words, the proposed approach is able to successfully learn rhyming patterns in two different English poetry datasets (Sonnet and Limerick) without explicitly being provided with any phonetic information",
 }
